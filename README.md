@@ -9,6 +9,7 @@ The project uses Firebase Authentication and Firestore for storing user subscrip
  
  User Authentication
 •	Email/Password Sign Up & Login
+
 •	Anonymous login fallback
 •	Secure Firebase Authentication integration
 •	Custom token support
