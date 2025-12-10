@@ -1,16 +1,73 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Stock Dashboard (Real-Time Broker Client Simulator)
 
-Currently, two official plugins are available:
+A React + Firebase based stock dashboard that simulates a real-time broker client system.
+Users can sign up, log in, subscribe to stocks, track real-time simulated stock prices, and manage their personalized stock list.
+The project uses Firebase Authentication and Firestore for storing user subscriptions and simulated live market data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ Features
+ 
+ User Authentication
+•	Email/Password Sign Up & Login
+•	Anonymous login fallback
+•	Secure Firebase Authentication integration
+•	Custom token support
 
-## React Compiler
+Real-Time Stock Prices
+•	Live stock price updates every second
+•	Trend indicators (📈 rising / 📉 falling)
+•	Smooth UI transitions and color-coded price movements
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ User-Specific Stock Subscriptions
+•	Subscribe/unsubscribe to chosen stocks
+•	Your subscriptions stored privately in Firestore
+•	Data auto-updated via real-time Firestore listeners
 
-## Expanding the ESLint configuration
+Cloud Firestore Integration
+•	Public collection simulating stock market price feed
+•	User-specific private subscription collection
+•	Snapshot listeners for instant UI updates
+________________________________________
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ Project Structure
+src/
+ └── App.jsx      # Main React application logic (UI + Firebase Integration)
+public/
+package.json
+README.md
+________________________________________
+ Technologies Used
+ 
+Technology        	        Purpose
+React                 	    Frontend UI and state management
+Firebase Authentication   	Secure login and account management
+Firestore Database         	Real-time syncing of stock prices & user subscriptions
+TailwindCSS               	Modern UI styling
+Vite / React Scripts	      Development environment
+________________________________________
+
+Installation & Setup
+
+1️. Clone the Repository
+git clone https://github.com/deena-dsouza/stock_dashboard.git
+cd stock_dashboard
+
+2️. Install Dependencies
+npm install
+
+3. Start the App
+npm run dev
+
+ How the Simulation Works
+ 
+ Stock Price Generator
+•	A random price change ±0.5% is applied every second
+•	Updates are written to Firestore
+•	Frontend listens in real-time and updates UI
+
+ Subscriptions
+•	When a user subscribes, a Firestore document is created
+•	Unsubscribing deletes the document
+•	UI instantly updates because of snapshot listeners
+
+
