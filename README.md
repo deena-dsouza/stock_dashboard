@@ -51,9 +51,7 @@ ________________________________________
  
 src/
 
- └── App.jsx 
-
- # Main React application logic (UI + Firebase Integration)
+ └── App.jsx     # Main React application logic (UI + Firebase Integration)
 public/
 
 package.json
@@ -66,11 +64,17 @@ ________________________________________
  
  
 Technology        	        Purpose
+
 React                 	    Frontend UI and state management
+
 Firebase Authentication   	Secure login and account management
+
 Firestore Database         	Real-time syncing of stock prices & user subscriptions
+
 TailwindCSS               	Modern UI styling
+
 Vite / React Scripts	      Development environment
+
 ________________________________________
 
 
@@ -78,19 +82,19 @@ Installation & Setup
 
 1️. Clone the Repository
 
-git clone https://github.com/deena-dsouza/stock_dashboard.git
+  git clone https://github.com/deena-dsouza/stock_dashboard.git
 
-cd stock_dashboard
+  cd stock_dashboard
 
 
 2️. Install Dependencies
 
-npm install
+   npm install
 
 
 3. Start the App
-4. 
-npm run dev
+
+   npm run dev
 
 
  How the Simulation Works
