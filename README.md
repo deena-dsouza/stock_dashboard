@@ -65,15 +65,15 @@ ________________________________________
  
 Technology        	        Purpose
 
-React                 	    Frontend UI and state management
+React  --               	    Frontend UI and state management
 
-Firebase Authentication   	Secure login and account management
+Firebase Authentication  -- 	Secure login and account management
 
-Firestore Database         	Real-time syncing of stock prices & user subscriptions
+Firestore Database --        	Real-time syncing of stock prices & user subscriptions
 
-TailwindCSS               	Modern UI styling
+TailwindCSS     --          	Modern UI styling
 
-Vite / React Scripts	      Development environment
+Vite / React Scripts	--      Development environment
 
 ________________________________________
 
